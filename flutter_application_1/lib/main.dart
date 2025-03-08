@@ -98,11 +98,16 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
         child: Container(
+          //Pading to the container
           padding: EdgeInsets.all(25.0),
-          color: Colors.red[300],
+          //BOx raries using decoration
+          // decoration: BoxDecoration(borderRadius: BorderRadius.circular(25.5)), This will pop error
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(25.5),
+            color: Colors.red[300],
+          ),
+
           height: 100,
           width: 100,
           child: Text('Hello', style: TextStyle(color: Colors.white)),
