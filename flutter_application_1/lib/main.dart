@@ -4,6 +4,13 @@ void main() {
   runApp(const MyApp());
 }
 
+// All data types
+int num = 1;
+String str = "hello";
+double dbl = 1.5;
+List fruits = []; //[apple,banana,cherry,etc];
+Map<String, dynamic> map = {"str1": 1, 'Str2': "hello", "Str3": 1.5};
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
