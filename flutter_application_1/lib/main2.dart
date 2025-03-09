@@ -110,9 +110,12 @@ class _MyHomePageState extends State<MyHomePage> {
 
           height: 100,
           width: 100,
-          child: Text(
-            'Hello $_counter}',
-            style: TextStyle(color: Colors.white),
+          child: TextField(
+            decoration: InputDecoration(
+              border: InputBorder.none,
+              labelText: 'Enter Name',
+              hintText: 'Enter Your Name',
+            ),
           ),
         ),
       ),
