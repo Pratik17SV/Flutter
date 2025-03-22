@@ -7,18 +7,19 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  //Custom function for on tap event
-  void Usertap() {
-    print('User tapped');
-  }
-
   @override
   Widget build(BuildContext context) {
+    List names = ['Pratik', 'Sanjay', 'Maruti'];
     return MaterialApp(
       debugShowCheckedModeBanner:
           false, //Remove the banner in the nav on top right
 
-      home: Scaffold(),
+      home: Scaffold(
+        body: ListView.builder(
+          itemCount: names.length,
+          itemBuilder: (context, index) => ListTile(title: Text(names[index])),
+        ),
+      ),
     );
   }
 }
