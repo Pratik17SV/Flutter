@@ -1,4 +1,5 @@
 import 'package:examtestapp/Home.dart';
+import 'package:examtestapp/Profile.dart';
 import 'package:examtestapp/Settings.dart';
 import 'package:examtestapp/first_screen.dart';
 import 'package:flutter/material.dart';
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/home': (context) => Homepage(),
         '/setting': (context) => Settingspage(),
+        '/profile': (context) => Profile(),
       },
     );
   }

@@ -5,6 +5,10 @@ class Homepage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(title: Text('This is Home page')));
+    return Scaffold(
+      appBar: AppBar(title: Text('Home page')),
+      body: Center(child: Text('This is Home page.')),
+      backgroundColor: Colors.blue,
+    );
   }
 }
